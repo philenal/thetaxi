@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Theta Xi</title>
+        <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="stylesheet" href="https://use.typekit.net/fdj1lfv.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
