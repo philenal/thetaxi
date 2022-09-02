@@ -1,14 +1,14 @@
-import { useState, useRef, useEffect } from "react";
-import styles from "../../styles/Brother.module.css";
+import { useState, useEffect } from "react";
+import styles from "../styles/Brother.module.css";
 
 function ProfilePhoto(props) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window?.addEventListener("resize", handleResize);
   });
 
   const handleResize = () => {
-    if (window.innerWidth < 600) {
+    if (window?.innerWidth < 600) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -26,15 +26,13 @@ function ProfilePhoto(props) {
           props.hasGlow ? styles.BrotherImageGlow : styles.BrotherImage
         }
       />
-      {isMobile | (window.innerWidth < 600) ? (
+      <div className={styles.MobileProfileName}>
         <div
           className={props.hasGlow ? styles.EventNameGlow : styles.EventName}
         >
           {props.name}
         </div>
-      ) : (
-        <div></div>
-      )}
+      </div>
     </div>
   );
 }

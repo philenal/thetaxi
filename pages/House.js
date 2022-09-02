@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import styles from "../styles/Brother.module.css";
-import HouseTabs from "./components/HouseTabs";
 
 function House(props) {
   const elTitle = useRef(null);
@@ -29,7 +28,6 @@ function House(props) {
       <div className={styles.RushTitle}>
         <span ref={elTitle} />
       </div>
-      <HouseTabs />
     </div>
   );
 }

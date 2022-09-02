@@ -1,4 +1,4 @@
-import styles from "../../styles/Brother.module.css";
+import styles from "../styles/Brother.module.css";
 
 export default function BrotherModal(props) {
   const { brother, open, setClose } = props;
@@ -15,30 +15,30 @@ export default function BrotherModal(props) {
         <div className="modal-content">
           <div className="modal-body">
             <div className={styles.BrotherModal}>
-              <div className={styles.BrotherDelta}>▲{brother.delta}▼</div>
+              <div className={styles.BrotherDelta}>▲{brother?.delta}▼</div>
 
               <img
                 className={styles.BrotherImageModal}
-                src={"./images/" + brother.delta + ".jpg"}
+                src={"./images/" + brother?.delta + ".jpg"}
               />
 
               <div className={styles.BrotherBlurb}>
-                <span className={styles.BrotherNameModal}>{brother.name}</span>
+                <span className={styles.BrotherNameModal}>{brother?.name}</span>
                 <br />
                 {/* <span className={styles.BrotherSection}>DELTA: </span>{" "}
-                {brother.delta}
+                {brother?.delta}
                 <br /> */}
                 <span className={styles.BrotherSection}>CLASS YEAR: </span>{" "}
-                {brother.class}
+                {brother?.class}
                 <br />
                 <span className={styles.BrotherSection}>COURSE: </span>{" "}
-                {brother.course}
+                {brother?.course}
                 <br />
                 <span className={styles.BrotherSection}>INTERESTS: </span>
-                {brother.interests}
+                {brother?.interests}
                 <br />
                 <br />
-                {brother.blurb}
+                {brother?.blurb}
               </div>
             </div>
           </div>

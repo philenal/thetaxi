@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import styles from "../styles/Brother.module.css";
-import Event from "./components/Event";
-import EventModal from "./components/EventModal";
+import Event from "../components/Event";
+import EventModal from "../components/EventModal";
 
 const day1 = [
   {

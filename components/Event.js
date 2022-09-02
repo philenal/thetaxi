@@ -1,4 +1,4 @@
-import styles from "../../styles/Brother.module.css";
+import styles from "../styles/Brother.module.css";
 
 function Event(props) {
   return (

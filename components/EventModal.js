@@ -1,4 +1,4 @@
-import styles from "../../styles/Brother.module.css";
+import styles from "../styles/Brother.module.css";
 
 export default function EventModal(props) {
   const { event, open, setClose } = props;
@@ -14,14 +14,14 @@ export default function EventModal(props) {
         <div className="modal-content">
           <div className="modal-body">
             <div className={styles.EventModal}>
-              <img className={styles.EventImageModal} src={event.src} />
+              <img className={styles.EventImageModal} src={event?.src} />
 
               <div className={styles.EventBlurb}>
-                <span className={styles.BrotherNameModal}>{event.name}</span>
+                <span className={styles.BrotherNameModal}>{event?.name}</span>
                 <br />
 
-                <div className={styles.EventTime}>{event.time}</div>
-                {event.blurb}
+                <div className={styles.EventTime}>{event?.time}</div>
+                {event?.blurb}
                 <br />
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Typed from "typed.js";
-import ProfilePhoto from "./components/ProfilePhoto";
-import BrotherModal from "./components/BrotherModal";
+import ProfilePhoto from "../components/ProfilePhoto";
+import BrotherModal from "../components/BrotherModal";
 import styles from "../styles/Brother.module.css";
 
 const brothers = [
