@@ -1,0 +1,382 @@
+.Brother {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 0px 20px 40px 20px;
+  }
+  
+  .BrotherContainer {
+    background-color: var(--black);
+    height: 100vh;
+  }
+  
+  .Brother:hover {
+    opacity: 50%;
+  }
+
+  .BrotherImage, .BrotherImageGlow {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .EventImage, .EventImageGlow {
+    margin: auto;
+  }
+
+  .BrotherImage, .EventImage {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    animation: glowOff .7s ease-in-out forwards;
+  }
+
+  .BrotherImageGlow, .EventImageGlow {
+    box-shadow: var(--glow);
+    border-radius: 50%;
+    animation: glow .7s forwards;
+  }
+  
+
+  @keyframes glowOff {
+    from {box-shadow: var(--glow); 
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+    to {box-shadow: none;
+        transform: scale(1);}
+  }
+
+  @keyframes nameGlowOff {
+    from {
+        font-weight: var(--heavy);
+        text-shadow: var(--text-glow); 
+        font-size: 24px;
+    }
+    to {text-shadow: none;}
+  }
+
+  @keyframes glow {
+    from {box-shadow: none;}
+    to {box-shadow: var(--glow); 
+        filter: grayscale(0%);
+        transform: scale(1.1);}
+  }
+
+  @keyframes nameGlow {
+    from {text-shadow: none;}
+    to {
+        font-weight: var(--heavy);
+        text-shadow: var(--text-glow); 
+        font-size: 24px;
+    }
+  }
+
+  .BrotherNamesContainer {
+    direction:rtl; 
+    scrollbar-width: auto;
+    scrollbar-color: white #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .BrotherImagesContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .BrotherImagesContainer::-webkit-scrollbar-track {
+    background: #8a5c5c27;
+  }
+
+  .BrotherImagesContainer::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid var(--dark-blue); */
+  }
+
+  .BrotherNamesContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .BrotherNamesContainer::-webkit-scrollbar-track {
+    background: #8a5c5c27;
+  }
+
+  .BrotherNamesContainer::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid var(--dark-blue); */
+  }
+  .BrotherNamesContainer {
+    color: var(--white);
+    width:100px;
+    min-width: 250px;
+    height: 60vh;
+    overflow-y: scroll;
+  }
+
+
+  .BrotherImagesContainer {
+    padding-left: 10%;
+    align-items: center;
+    height: 60vh;
+    max-height: 60vh;
+    min-height: 60vh;
+    display: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    overflow-y: scroll;
+    padding-right: 50px;
+    
+  }
+  
+  .BrotherProfileBio {
+    width: 300px;
+    height:300px;
+    padding: 0 100px;
+  }
+  
+  .BrotherName {
+    direction:ltr; 
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    font-size: 20px;
+    padding-bottom: 20px;
+    animation: nameGlowOff .7s ease-in-out forwards;
+  }
+
+  .BrotherNameGlow {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    font-size: 24px;
+    padding: 10px;
+    animation: nameGlow .7s forwards;
+  }
+
+
+
+  .BrotherSection {
+    font-weight: 500;
+  }
+  .BrotherBio {
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--blue);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .BrotherNameModal {
+    color: var(--dark-blue);
+    font-size: 48px;
+  }
+
+  .BrotherDelta {
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    margin-right:10px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .BrotherBlurb, .EventBlurb {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    width: 300px;
+    margin-left: 40px;
+  }
+  .EventModal {
+    justify-content: space-evenly;
+  }
+  .BrotherModal, .EventModal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .EventImageModal {
+    justify-content: center;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .BrotherImageModal {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .BrotherAll {
+    margin-right:10%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .BrotherTitle {
+    text-align: left;
+    margin-left: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 204px;
+  }
+
+  .videoContainer {
+    color: var(--white);
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #000000, #1d325a, #416597);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  }
+
+  .RushTitle {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 204px;
+    min-height: 200px;
+    height: 200px;
+    animation: move 1.2s ease-in infinite; 
+  }
+
+  .RushDay {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .RushDayTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .EventContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .EventNameGlow, .EventName {
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .05rem;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .EventNameGlow {
+    animation: nameGlow .7s forwards;
+  }
+  .EventName {
+    animation: nameGlowOff .7s ease-in-out forwards;
+  }
+
+  .EventImagesContainer {
+    padding:50px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: relative;
+    width: 60%; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* margin-left: 100px; */
+    
+  }
+.EventImage, .EventImageGlow {
+    width: 125px;
+    height: 125px;
+    max-width: 125px;
+    max-height: 125px;
+  }
+
+.EventTime {
+  color: var(--dark-blue);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.backgroundImage {
+  opacity: 20%;
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: 100vh;
+
+  position: absolute;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .RushTitle, .BrotherTitle {
+    font-size: 50px;
+  }
+  .EventName, .EventNameGlow {
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .BrotherNamesContainer {
+    display: none;
+  }
+  .BrotherNameModal {
+    font-size: 20px;
+  }
+  .BrotherImagesContainer {
+    padding: 0;
+  }
+  .EventImageModal, .BrotherImageModal {
+    width: 200px;
+    height: 200px;
+    margin:auto;
+  }
+  .EventModal, .BrotherModal {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .EventBlurb, .BrotherBlurb {
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+  }
+  .BrotherDelta {
+    writing-mode: horizontal-tb;
+  }
+}
+
+

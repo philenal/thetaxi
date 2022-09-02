@@ -1,0 +1,71 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import url("https://use.typekit.net/fdj1lfv.css");
+:root {
+  --font-family: bebas-neue-by-fontfabric, sans-serif;
+  --dark-blue: #465e80;
+  --heavy: 700;
+  --thin: 200;
+  --title: 175px;
+  --blue: #1395b2;
+  --white: white;
+  --black: black;
+  --glow: 0px 2px 20px #95bcf3;
+  --text-glow: 2px 4px 20px white;
+  --super-glow: 0px 4px 500px #465e80;
+  --grey: #939393;
+}
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.Home-menuItems {
+  width: 100vw;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-menuItem {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-weight: var(--thin);
+  font-style: normal;
+
+  letter-spacing: .5rem;
+  z-index: 1000;
+  color: var(--white);
+  font-size: 18px;
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
