@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { motion, AnimatePresence } from "framer-motion";
-import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
@@ -41,11 +40,6 @@ export default function Home() {
   }, []);
   return (
     <div className="pageContainer">
-      <Head>
-        <title>Theta Xi</title>
-        {/* TODO: Find good icon */}
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className={styles.videoContainer}>
         <video autoPlay muted loop id="txi_formal">
           <source src="./txi_formal.mp4" type="video/mp4" />
