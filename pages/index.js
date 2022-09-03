@@ -59,9 +59,9 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="Home-menuItem"
         >
-          <Link href="">HOME</Link>
+          <Link href=""><a className={styles.Link}>HOME</a></Link>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           key={"house"}
           initial={{ opacity: 0 }}
           transition={{ delay: 1.8, duration: 1.5 }}
@@ -69,7 +69,7 @@ export default function Home() {
           className="Home-menuItem"
         >
           <Link href="/House">HOUSE</Link>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           key={"brothers"}
           initial={{ opacity: 0 }}
@@ -77,7 +77,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="Home-menuItem"
         >
-          <Link href="/Brothers">BROTHERS</Link>
+          <Link href="/brothers"><a className={styles.Link}>BROTHERS</a></Link>
         </motion.div>
         <motion.div
           key={"rush"}
@@ -86,9 +86,9 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="Home-menuItem"
         >
-          <Link href="/Rush">RUSH</Link>
+          <Link href="/rush"><a className={styles.Link}>RUSH</a></Link>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           key={"summer"}
           initial={{ opacity: 0 }}
           transition={{ delay: 1.8, duration: 1.5 }}
@@ -96,7 +96,7 @@ export default function Home() {
           className="Home-menuItem"
         >
           <Link href="/Summer">SUMMER</Link>
-        </motion.div>
+        </motion.div> */}
       </AnimatePresence>
       <div className="Home-menuItems"></div>
     </div>

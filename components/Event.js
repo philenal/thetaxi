@@ -22,9 +22,8 @@ function Event(props) {
             </div>
           </>
         ) : (
-          ""
+          <br />
         )}
-        <br />
         {props.time}
       </div>
     </div>

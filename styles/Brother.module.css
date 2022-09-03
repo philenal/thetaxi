@@ -346,6 +346,11 @@
 @media only screen and (max-width: 600px) {
   .RushTitle, .BrotherTitle {
     font-size: 50px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .BrotherTitle {
+    margin-bottom: -50px;
   }
   .EventName, .EventNameGlow {
     font-size: 16px;
@@ -378,5 +383,67 @@
   .BrotherDelta {
     writing-mode: horizontal-tb;
   }
+  .Back {
+    position: relative !important;
+    display: block;
+    top: 0 !important;
+    left: 0 !important;
+    padding-top: 30px;
+    margin-bottom: -70px;
+    font-size: 16px !important;
+    text-align: center !important;
+  }
 }
 
+.Back {
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  text-align: left;
+  color: #a5a5a5;
+  font-size: 20px;
+  animation: unhoverLink .7s ease-in-out forwards;
+
+}
+
+.Back:hover {
+  animation: hoverLink .7s ease-in-out forwards;
+}
+
+@keyframes unhoverLink {
+  0% {
+    color: white;
+    text-shadow: 0px 2px 20px #95bcf3;
+  }
+  100% {
+  color: #a5a5a5;
+  }
+}
+
+@keyframes hoverLink {
+  0% {
+    color: #a5a5a5;
+  }
+  100% {
+  color: white;
+  text-shadow: 0px 2px 20px #95bcf3;
+  }
+}
+
+.RushPhone {
+  color: #a5a5a5;
+  justify-content: center;
+  text-align: center;
+  margin-top:-20px;
+  padding-bottom:20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: .1rem;
+}
+
+.RushPhoneNumber {
+  font-size: 150%;
+
+}

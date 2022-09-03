@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Typed from "typed.js";
+import Link from "next/link";
 import ProfilePhoto from "../components/ProfilePhoto";
 import BrotherModal from "../components/BrotherModal";
 import styles from "../styles/Brother.module.css";
@@ -63,14 +64,6 @@ const brothers = [
     blurb: "People say nothing is impossible, but I do nothing every day.",
   },
   {
-    name: "Ian Chen",
-    delta: "1266",
-    class: "2024",
-    course: "3, 6-14",
-    interests: "Poker, basketball, pool",
-    blurb: "早上好中國，現在我有冰淇淋！",
-  },
-  {
     name: "Larry Shi",
     delta: "1279",
     class: "2025",
@@ -120,12 +113,13 @@ const brothers = [
     blurb: "",
   },
   {
-    name: "Andrew Doan", // TODO
-    delta: "1266",
-    class: "2024",
-    course: "3, 6-14",
-    interests: "Poker, basketball, pool",
-    blurb: "早上好中國，現在我有冰淇淋！",
+    name: "Andrew Doan",
+    delta: "1268",
+    class: "2025",
+    course: "2",
+    interests:
+      "Cycling, Powerlifting, Woodworking, Ceramics, Cars, League of Legends",
+    blurb: "I like making things",
   },
   {
     name: "Thomas Guo",
@@ -311,7 +305,24 @@ const brothers = [
     interests: "Cybersecurity, Game Theory, Photography, Bowling",
     blurb: "",
   },
-  //   TODO: add timothy and dylan
+  {
+    name: "Ray Zheng",
+    delta: "6969",
+    class: "2024",
+    course: "6-14",
+    interests:
+      "Cooking, shopping, skincare, dancing, crnb, hanging out with the boyz",
+    blurb: "watashi brother desu",
+  },
+  {
+    name: "Phil Liu",
+    delta: "6996",
+    class: "2024",
+    course: "18C",
+    interests:
+      "Shopping, badminton, art, running, web dev, hanging out with the boyz and ray",
+    blurb: "joneun brother ay yo",
+  },
 ].sort((a, b) => (a.delta > b.delta ? 1 : -1));
 
 function Brothers(props) {
@@ -398,6 +409,9 @@ function Brothers(props) {
         setClose={() => setBrother({})}
       />
       <div className={styles.videoContainer}>
+        <Link href="/">
+          <a className={styles.Back}>BACK TO HOME</a>
+        </Link>
         <div className={styles.BrotherTitle}>
           <span ref={elTitle} />
         </div>

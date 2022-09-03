@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
+import Link from "next/link";
 import styles from "../styles/Brother.module.css";
 import Event from "../components/Event";
 import EventModal from "../components/EventModal";
@@ -234,8 +235,15 @@ function Rush(props) {
         setClose={() => setEvent({})}
       />
       <div className={styles.videoContainer}>
+        <Link href="/">
+          <a className={styles.Back}>BACK TO HOME</a>
+        </Link>
         <div className={styles.RushTitle}>
           <span ref={elTitle} />
+        </div>
+        <div className={styles.RushPhone}>
+          Need a ride? Have a question?
+          <div className={styles.RushPhoneNumber}> CALL 978-809-5223</div>
         </div>
         <div className={styles.RushDay}>
           <div className={styles.RushDayTitle}> 9 | 3</div>
