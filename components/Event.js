@@ -13,6 +13,17 @@ function Event(props) {
       />
       <div className={props.hasGlow ? styles.EventNameGlow : styles.EventName}>
         {props.name}
+
+        {props.name == "The Theta Xi Arcade" ? (
+          <>
+            <br />{" "}
+            <div style={{ fontSize: "10px", marginTop: "-5px" }}>
+              League/Valorant
+            </div>
+          </>
+        ) : (
+          ""
+        )}
         <br />
         {props.time}
       </div>

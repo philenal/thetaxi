@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/fdj1lfv.css");
+
 :root {
   --font-family: bebas-neue-by-fontfabric, sans-serif;
   --dark-blue: #465e80;
@@ -41,7 +41,7 @@ body {
 
   letter-spacing: .5rem;
   z-index: 1000;
-  color: var(--white);
+  color: white;
   font-size: 18px;
   
 }
