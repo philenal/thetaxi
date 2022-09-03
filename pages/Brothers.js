@@ -11,8 +11,8 @@ const brothers = [
     delta: "1221",
     class: "2022",
     course: "6-3",
-    interests: "Drinking/Dance/Gaming",
-    blurb: "IT’S SHOTS O’CLOCK",
+    interests: "Lifting, Singing, Dancing, sadly League",
+    blurb: "Shitttt",
   },
   {
     name: "Jan Adlawan",
@@ -35,8 +35,8 @@ const brothers = [
     delta: "1269",
     class: "2024",
     course: "6-2, 18",
-    interests: "Politics, Eating, Math, Dance, Algorithms, Sleeping (PEMDAS)",
-    blurb: "i love k/da",
+    interests: "Interests: valorant, politics, lifting, being cringe",
+    blurb: "i love K/DA",
   },
   {
     name: "Qiong Zhou Huang",
@@ -110,7 +110,7 @@ const brothers = [
     class: "2025",
     course: "6-3",
     interests: "pool, food, F1, baking",
-    blurb: "",
+    blurb: "plays way too much pool",
   },
   {
     name: "Andrew Doan",
@@ -230,14 +230,6 @@ const brothers = [
     blurb: "",
   },
   {
-    name: "Shawn Im",
-    delta: "1251",
-    class: "2023",
-    course: "18, 6-3",
-    interests: "Climbing, Mario Odyssey",
-    blurb: "",
-  },
-  {
     name: "Aiden Padilla",
     delta: "1250",
     class: "2023",
@@ -251,6 +243,14 @@ const brothers = [
     class: "2024",
     course: "6-3, 18",
     interests: "Beach Volleyball, Spikeball, Card Games, Writing, Drawing",
+    blurb: "",
+  },
+  {
+    name: "Collin Wen",
+    delta: "1247",
+    class: "2024",
+    course: "6-3",
+    interests: "Squash, golf, music, hiking, art",
     blurb: "",
   },
   {
@@ -302,7 +302,7 @@ const brothers = [
     delta: "1275",
     class: "2025",
     course: "6-2",
-    interests: "Cybersecurity, Game Theory, Photography, Bowling",
+    interests: "Competitive programming, anime/manga, singing, running, tennis, music",
     blurb: "",
   },
   {
