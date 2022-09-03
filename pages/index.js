@@ -79,7 +79,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="Home-menuItem"
         >
-          <Link href="/brothers">
+          <Link href="/Brothers">
             <a className={styles.Link}>BROTHERS</a>
           </Link>
         </motion.div>
@@ -90,7 +90,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           className="Home-menuItem"
         >
-          <Link href="/rush">
+          <Link href="/Rush">
             <a className={styles.Link}>RUSH</a>
           </Link>
         </motion.div>
