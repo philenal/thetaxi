@@ -68,6 +68,10 @@
     font-size: 30px;
     text-align: center;
   }
+  .header {
+    
+    margin-top: -25px;
+  }
 
 }
 
