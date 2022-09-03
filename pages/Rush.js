@@ -9,12 +9,13 @@ const day1 = [
   {
     src: "/event-images/kbbq.jpg",
     name: "KBBQ and House Tours",
+
     time: "2:00PM - 4:00PM",
     blurb:
       "Come try our signature homemade Korean barbecue and get acquainted with our two brownstone mansions. There's no better meal to start Rush off right!",
   },
   {
-    src: "/event-images/league.jpg",
+    src: "/event-images/arcade.jpg",
     name: "The Theta Xi Arcade",
 
     time: "4:00PM - 6:00PM",
@@ -91,7 +92,7 @@ const day2 = [
 
 const day3 = [
   {
-    src: "/event-images/ribs.jpg",
+    src: "/event-images/flaminggrill.jpg",
     name: "Flaming Grill",
     time: "11:00AM - 1:00PM",
     blurb: "Join us for lunch at the Flaming Grill and Buffet!",
@@ -143,7 +144,7 @@ const day5 = [
 
 const day6 = [
   {
-    src: "/event-images/kbbq.jpg", // TODO: change
+    src: "/event-images/thaifood.jpg",
     name: "Thai Dinner",
     time: "6:00PM - 8:00PM",
     start: "18:00",
@@ -170,7 +171,7 @@ const day7 = [
       "All-you-can-eat sushi at one of the brothers' favorite locations. Need we say more? Come find out for yourself why we return to Yamato year after year.",
   },
   {
-    src: "/event-images/kbbq.jpg", // TODO: change
+    src: "/event-images/cocktails.jpg",
     name: "Theta Xi Mocktails",
     time: "8:00PM - 11:00PM",
     blurb:
