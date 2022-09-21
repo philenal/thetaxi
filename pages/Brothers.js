@@ -153,15 +153,14 @@ const brothers = [
     interests: "Youtube, Cooking, Genshin, Music",
     blurb: "zzzzz",
   },
-  {
-    name: "Ethan Yang",
-    delta: "1261",
-    class: "2025",
-    course: "6-2",
-    interests: "Rock climbing, video games, cooking, robotics",
-    blurb: "<3",
-  },
-
+  // {
+  //   name: "Ethan Yang",
+  //   delta: "1261",
+  //   class: "2025",
+  //   course: "6-2",
+  //   interests: "Rock climbing, video games, cooking, robotics",
+  //   blurb: "<3",
+  // },
   {
     name: "Curtis Chang",
     delta: "1260",
@@ -170,15 +169,14 @@ const brothers = [
     interests: "Origami, Cooking, Eating, Listening to K-Pop, Dancing (poorly)",
     blurb: 'alexa play "what is love" by twice',
   },
-
-  {
-    name: "Pascal Passigan",
-    delta: "1258",
-    class: "2025",
-    course: "18-C",
-    interests: "Poker, basketball, pool",
-    blurb: "I'm chill",
-  },
+  // {
+  //   name: "Pascal Passigan",
+  //   delta: "1258",
+  //   class: "2025",
+  //   course: "18-C",
+  //   interests: "Poker, basketball, pool",
+  //   blurb: "I'm chill",
+  // },
   {
     name: "Adrian Gutierrez",
     delta: "1257",
@@ -245,14 +243,14 @@ const brothers = [
     interests: "Beach Volleyball, Spikeball, Card Games, Writing, Drawing",
     blurb: "",
   },
-  {
-    name: "Collin Wen",
-    delta: "1247",
-    class: "2024",
-    course: "6-3",
-    interests: "Squash, golf, music, hiking, art",
-    blurb: "",
-  },
+  // {
+  //   name: "Collin Wen",
+  //   delta: "1247",
+  //   class: "2024",
+  //   course: "6-3",
+  //   interests: "Squash, golf, music, hiking, art",
+  //   blurb: "",
+  // },
   {
     name: "Nguyen Le",
     delta: "1244",
