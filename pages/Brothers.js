@@ -303,24 +303,24 @@ const brothers = [
     interests: "Competitive programming, anime/manga, singing, running, tennis, music",
     blurb: "",
   },
-  {
-    name: "Ray Zheng",
-    delta: "6969",
-    class: "2024",
-    course: "6-14",
-    interests:
-      "Cooking, shopping, skincare, dancing, crnb, hanging out with the boyz",
-    blurb: "watashi brother desu",
-  },
-  {
-    name: "Phil Liu",
-    delta: "6996",
-    class: "2024",
-    course: "18C",
-    interests:
-      "Shopping, badminton, art, running, web dev, hanging out with the boyz and ray",
-    blurb: "joneun brother ay yo",
-  },
+  // {
+  //   name: "Ray Zheng",
+  //   delta: "6969",
+  //   class: "2024",
+  //   course: "6-14",
+  //   interests:
+  //     "Cooking, shopping, skincare, dancing, crnb, hanging out with the boyz",
+  //   blurb: "watashi brother desu",
+  // },
+  // {
+  //   name: "Phil Liu",
+  //   delta: "6996",
+  //   class: "2024",
+  //   course: "18C",
+  //   interests:
+  //     "Shopping, badminton, art, running, web dev, hanging out with the boyz and ray",
+  //   blurb: "joneun brother ay yo",
+  // },
 ].sort((a, b) => (a.delta > b.delta ? 1 : -1));
 
 function Brothers(props) {
